@@ -54,7 +54,7 @@
     </header>
     <main>
       <div class="solutions">
-        <section class="solutions__section container section">
+        <section class="solutions__section section">
           <h1 class="solutions__title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
           <button type="button" class="btn-service" data-modal-open>Request our service</button>
         </section>
@@ -121,11 +121,10 @@
             <li class="gadgets__list-card">
               <div class="gadgets__list-thumb">
                 <img
-                  src="./images/pc.jpg"
+                  srcset="./images/gadgets/d-pc.jpg 1x, ./images/gadgets/d-pc@2x.jpg 2x"
+                  src="./images/gadgets/d-pc.jpg"
                   alt="Product Designer"
                   class="gadgets__list-img"
-                  width="370"
-                  height="294"
                 />
                 <div class="gadgets__list-overlay">
                   <p class="gadgets__list-text">desktop apps</p>
@@ -135,11 +134,10 @@
             <li class="gadgets__list-card">
               <div class="gadgets__list-thumb">
                 <img
-                  src="./images/smart.jpg"
+                  srcset="./images/gadgets/d-smart.jpg 1x, ./images/gadgets/d-smart@2x.jpg 2x"
+                  src="./images/gadgets/d-smart.jpg"
                   alt="smart"
                   class="gadgets__list-img"
-                  width="370"
-                  height="294"
                 />
                 <div class="gadgets__list-overlay">
                   <p class="gadgets__list-text">mobile apps</p>
@@ -149,11 +147,10 @@
             <li class="gadgets__list-card">
               <div class="gadgets__list-thumb">
                 <img
-                  src="./images/tab.jpg"
+                  srcset="./images/gadgets/d-tab.jpg 1x, ./images/gadgets/d-tab@2x.jpg 2x"
+                  src="./images/gadgets/d-tab.jpg"
                   alt="tablet"
                   class="gadgets__list-img"
-                  width="370"
-                  height="294"
                 />
                 <div class="gadgets__list-overlay">
                   <p class="gadgets__list-text">design solutions</p>
@@ -168,14 +165,25 @@
           <h2 class="heading-style">Our Team</h2>
           <ul class="team__list">
             <li class="team__list-person">
-              <img
-                srcset="./images/main/proddes.jpg 1x, ./images/main/proddes@2x.jpg 2x"
-                class="team__list-img"
-                src="./images/main/proddes.jpg"
-                alt="Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/d-proddes.jpg 1x, ./images/team/d-proddes@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/t-proddes.jpg 1x, ./images/team/t-proddes@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/m-proddes.jpg 1x, ./images/team/m-proddes@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__list-img"
+                  src="./images/team/d-proddes.jpg"
+                  alt="Product Designer"
+                />
+              </picture>
               <div class="team__list-text">
                 <h3 class="team__list-name">Christopher Walker</h3>
                 <p class="team__list-prof">Product Designer</p>
@@ -212,14 +220,25 @@
               </div>
             </li>
             <li class="team__list-person">
-              <img
-                srcset="./images/main/frontdev@2x.jpg 2x"
-                class="team__list-img"
-                src="./images/main/frontdev.jpg"
-                alt="Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/d-frontdev.jpg 1x, ./images/team/d-frontdev@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/t-frontdev.jpg 1x, ./images/team/t-frontdev@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/m-frontdev.jpg 1x, ./images/team/m-frontdev@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__list-img"
+                  src="./images/team/d-frontdev.jpg"
+                  alt="Frontend Developer"
+                />
+              </picture>
               <div class="team__list-text">
                 <h3 class="team__list-name">Kylie Evans</h3>
                 <p class="team__list-prof">Frontend Developer</p>
@@ -256,13 +275,21 @@
               </div>
             </li>
             <li class="team__list-person">
-              <img
-                class="team__list-img"
-                src="./images/mark.jpg"
-                alt="Marketing"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/d-mark.jpg 1x, ./images/team/d-mark@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/t-mark.jpg 1x, ./images/team/t-mark@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/m-mark.jpg 1x, ./images/team/m-mark@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team__list-img" src="./images/team/d-mark.jpg" alt="Marketing" />
+              </picture>
               <div class="team__list-text">
                 <h3 class="team__list-name">Ryan Harris</h3>
                 <p class="team__list-prof">Marketing</p>
@@ -299,13 +326,21 @@
               </div>
             </li>
             <li class="team__list-person">
-              <img
-                class="team__list-img"
-                src="./images/ui.jpg"
-                alt="UI Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/d-ui.jpg 1x, ./images/team/d-ui@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/t-ui.jpg 1x, ./images/team/t-ui@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/m-ui.jpg 1x, ./images/team/m-ui@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team__list-img" src="./images/team/d-ui.jpg" alt="UI Designer" />
+              </picture>
               <div class="team__list-text">
                 <h3 class="team__list-name">Tyler Moore</h3>
                 <p class="team__list-prof">UI Designer</p>

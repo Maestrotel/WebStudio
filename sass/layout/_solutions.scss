@@ -1,14 +1,65 @@
 .solutions {
-  background-image: url(../images/overlay.png), url(../images/bgd-photo.jpg);
-  background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgd/bgd-mob.jpg);
+  background-size: contain;
   background-color: var(--secondary-background-color);
+
+  
+
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  // max-width: 1600px;
 }
 
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .solutions {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/bgd/bgd-mob@2x.jpg');
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .solutions {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/bgd/bgd-tab.jpg');
+  }
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .solutions {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/bgd/bgd-tab@2x.jpg');
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .solutions {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/bgd/bgd-desk.jpg');
+    // background-size: auto;
+  }
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .solutions {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/bgd/bgd-desk@2x.jpg');
+  }
+}
+
+
 .solutions__section {
+  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 696px;
-  text-align: center;
 }
 
 .solutions__title {
@@ -19,5 +70,8 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
 }
 
