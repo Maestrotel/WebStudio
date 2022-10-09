@@ -121,10 +121,16 @@ footer contacts color: rgba(255, 255, 255, 0.6);
   }
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 @media screen and (max-width: 480px) {
   .mobile-menu {
     position: fixed;
@@ -538,18 +544,22 @@ footer contacts color: rgba(255, 255, 255, 0.6);
   line-height: 1.51;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .heading-style {
+    margin-bottom: 50px;
+  }
+}
 .items {
   padding-bottom: 47px;
 }
-.items__list {
-  display: flex;
-  column-gap: 30px;
-}
 .items__list-indent {
-  width: 270px;
+  width: 450px;
+}
+.items__list-indent:not(:last-child) {
+  margin-bottom: 30px;
 }
 .items__list-pictures {
   background-color: var(--button-color);
@@ -573,45 +583,65 @@ footer contacts color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
 }
 
-.gadgets {
-  padding-top: 47px;
+@media screen and (min-width: 769px) {
+  .items__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .items__list-indent {
+    width: 354px;
+  }
 }
-.gadgets__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .items {
+    padding-bottom: 30px;
+  }
+  .items__list-indent {
+    width: 270px;
+  }
 }
-.gadgets__list-thumb {
-  position: relative;
+@media screen and (max-width: 1199px) {
+  .gadgets {
+    display: none;
+  }
 }
-.gadgets__list-overlay {
-  position: absolute;
-  height: 70px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-background-color);
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background-color: var(--overlay-gadgets-color);
+@media screen and (min-width: 1200px) {
+  .gadgets {
+    padding-top: 47px;
+  }
+  .gadgets__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .gadgets__list-thumb {
+    position: relative;
+  }
+  .gadgets__list-overlay {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-background-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: var(--overlay-gadgets-color);
+  }
 }
-
 .team {
   background-color: var(--button-color);
 }
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-}
 .team__list-person {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -662,14 +692,33 @@ footer contacts color: rgba(255, 255, 255, 0.6);
   fill: var(--primary-background-color);
 }
 
+@media screen and (min-width: 769px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .team__list-person {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list-person {
+    width: calc((100% - 90px) / 4);
+  }
+}
 .customers__list {
   display: flex;
   align-items: center;
+  column-gap: 30px;
+  row-gap: 30px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .customers__list-link {
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   align-items: center;
   justify-content: center;
@@ -689,6 +738,16 @@ footer contacts color: rgba(255, 255, 255, 0.6);
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 769px) {
+  .customers__list-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__list-link {
+    width: 170px;
+  }
+}
 .btn-line {
   display: flex;
   justify-content: center;

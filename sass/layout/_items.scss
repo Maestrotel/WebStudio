@@ -1,13 +1,12 @@
 .items {
   padding-bottom: 47px;
 
-  &__list {
-    display: flex;
-    column-gap: 30px;
+  &__list-indent {
+    width: 450px;
   }
 
-  &__list-indent {
-    width: 270px;
+  &__list-indent:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   &__list-pictures {
@@ -35,3 +34,31 @@
   }
 }
 
+
+@media screen and (min-width: 769px) {
+  .items__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px; 
+    row-gap: 30px; 
+ }
+
+  .items__list-indent {
+    width: 354px;
+  }
+
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .items {
+    padding-bottom: 30px;
+
+    &__list-indent {
+      width: 270px;
+    }
+  }
+}
