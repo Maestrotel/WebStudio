@@ -69,19 +69,16 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 }
 
 @media screen and (min-width: 1200px) {
-  .solutions {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/bgd/bgd-desk@2x.jpg');
+
+  .solutions__section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
   }
 
-    .solutions__section {
-      padding-top: 200px;
-      padding-bottom: 200px;
-
-    }
-
-    .solutions__title {
-      font-size: 44px;
-      line-height: 1.36;
-      width: 696px;
-    }
+  .solutions__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
