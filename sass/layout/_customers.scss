@@ -10,12 +10,10 @@
 
 }
 
-
 .customers__list {
   display: flex;
   column-gap: 30px;
   row-gap: 30px;
-
 
   &-link {
     display: flex;
@@ -56,8 +54,6 @@
   .customers__list-link {
     width: 210px;
   }
-
-
 }
 
 @media screen and (min-width: 769px) {

@@ -34,26 +34,19 @@
     row-gap: 60px;
     text-align: center;
   }
-
-  
 }
-
 
 .studio-bottom {
   color: var(--primary-background-color);
 }
 
 .footer-studio-address {
-  margin-top: 8px;
+  margin-top: 20px;
 }
 
 .footer-side {
   background-color: var(--secondary-background-color);
-
- 
 }
-
-
 
 .footer-studio {
   display: flex;
@@ -155,8 +148,6 @@
   right: 28px;
   transform: translateY(-50%);
 }
-// --------------------------------------
-
 
 @media screen and (min-width: 481px) {
   .footer-form-input {
