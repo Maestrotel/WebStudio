@@ -1,8 +1,7 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .customers__list {
     flex-direction: column;
   }
-
 
   .customers__list-link {
     width: 100%;
@@ -42,7 +41,7 @@
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
   .customers__list {
     display: flex;
     align-items: center;
@@ -56,7 +55,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .customers__list-link {
     width: 226px;
   }

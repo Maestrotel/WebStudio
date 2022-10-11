@@ -28,7 +28,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-studio {
     flex-direction: column;
     row-gap: 60px;
@@ -149,7 +149,7 @@
   transform: translateY(-50%);
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
   .footer-form-input {
     width: 450px;
   }
